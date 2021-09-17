@@ -1,0 +1,23 @@
+Annotated dialogue
+
+User: <request:start-metronome>starta ... hundratio slag per minut tre fjärdedelstakt</request>
+System: <feedback:pos>ok</feedback> hundratio slag per minut tre fjärdedelstakt [makes metronome sound] 
+U: öka
+S: [starts metronome sound]
+U: öka
+S: [higher tempo]
+U: stop
+S: [stoppar]
+U: starta
+S: ok vilken takt vill du ha
+U: sju tredjedelstakt
+S: ok sju tredjedelstakt, vilket tempo vill du ha
+U: femtifem slag per minut
+S: ok [makes metronome sound]
+U: stop
+S: stop
+U: start
+S: [makes metronome sound]
+U: stop
+S: stop
+

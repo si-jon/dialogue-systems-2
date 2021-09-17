@@ -1,0 +1,22 @@
+Annotated dialogue
+
+User: <request:start-metronome>jag vill starta metronomen</request
+System: <ask:load-settings>vill du starta på samma sätt eller med nya inställningar</ask>
+U: <ans:load-settings>jag vill köra med ny inställning</ans>
+S: <feedback:pos>ok,</feedback> <ask:meter>vilken taktart vill du ha</ask>
+U: <ans:meter>jag vill ha fyra fjärdedelstakt</ans> och <ans:tempo>i allegro</ans>
+S: <feedback:pos>ok </feedback> [starts metronome sound]
+U: <request:lower-volume>sänk volymen</request>
+S: [lower sound]
+U: <request:raise-volume>höj volymen</request
+S: [higher sound]
+U: <request:stop-metronome>stop</request>
+S: [stops metronome sound]
+U: <request:change-sound>jag vill ändra ljud ... kör ... kör ett knäppljud istället ... starta metronomen</request>
+S: <feedback-pos>ok</pos>, <confirm:change-sound>knäppljud</confirm> [starts metronome sound]
+U: <request:lower-tempo>kan sänka tempot lite</request>
+S: [lower tempo]
+U: <request:stop-metronome>stop</request>
+S: [stops metronome sound]
+U: <request:save-settings>spara inställningarna som jag har nu</request>
+S: <feedback:pos>inställningarna sparas</feedback>

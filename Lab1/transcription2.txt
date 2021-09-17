@@ -1,0 +1,28 @@
+Recording start
+
+---
+
+S> jag vill starta metronomen
+J> ok ... vill du starta på samma sätt ... eller nya inställningar
+S> jag vill köra med ny inställning
+J> ok ... vilken taktart vill du ha
+S> jag vill ha fyra fjärdedelstakt och i allegro
+J> ok ... <starts metronome sound>
+S> sänk volymen
+J> <lower sound>
+S> höj volymen
+J> <higher sound>
+S> stop
+J> <stops metronome sound>
+S> jag vill ändra ljud ... kör ... kör ett knäppljud istället ... starta metronomen
+J> ok ... knäppljud ... <starts metronome sound>
+S> kan sänka tempot lite
+J> <lower tempo>
+S> stop
+J> <stops metronome sound>
+S> spara inställningarna som jag har nu
+J> inställningarna sparas
+
+---
+
+Recording stop
