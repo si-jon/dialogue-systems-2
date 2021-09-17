@@ -1,4 +1,4 @@
-Annotated dialogue
+Annotated dialogue 2
 
 User: <request:start-metronome>jag vill starta metronomen</request
 System: <ask:load-settings>vill du starta på samma sätt eller med nya inställningar</ask>

@@ -1,49 +1,48 @@
-J:  starta ... hundratio slag per minut tre fjärdedelstakt
-S:  ok hundratio slag per minut ... tredje ... tretakt ...
+User:  starta ... hundratio slag per minut tre fjärdedelstakt
+System:  ok hundratio slag per minut ... tredje ... tretakt ...
     <makes metronome sound> nej jag kan inte hur gör man ... nu får du säg säg
     igen *namn* <laughter> vad det vad var det du sa
-J:  starta ... hundratio slag per minut tre fjärdedelstakt
+U:  starta ... hundratio slag per minut tre fjärdedelstakt
 S:  nu startar jag nu startar metronomen då säger vi ... du kan testa
-J:  öka
+U:  öka
 S:  <starts metronome sound> ok den ökar 
-J:  öka
+U:  öka
 S:  <higher tempo>
-J:  stop
+U:  stop
 S:  stoppar den ... jag tänker att man också kan säga så här ... nä men jag vill
     starta metronomen ... och så säger jag ok vad vilken takt vill du köra ...
     att man kan köra sånna saker
-J:  ok ja ... starta
+U:  ok ja ... starta
 S:  ok vilken takt vill du ha
-J:  sju tredjedelstakt
+U:  sju tredjedelstakt
 S:  ok sju tredjedelstakt ... vilken hastighet eller vilket tempo vill du ha
-J:  femtifem slag per minut
+U:  femtifem slag per minut
 S:  ok ... <makes metronome sound>
-J:  stop
+U:  stop
 S:  stop
-J:  start
+U:  start
 S:  <makes metronome sound>
-J:  stop
+U:  stop
 S:  stop
 
-
-J:  starta ... hundratio slag per minut tre fjärdedelstakt
+U:  starta ... hundratio slag per minut tre fjärdedelstakt
 S:  ok hundratio slag per minut tre fjärdedelstakt <makes metronome sound> 
-J:  öka
+U:  öka
 S:  <starts metronome sound>
-J:  öka
+U:  öka
 S:  <higher tempo>
-J:  stop
+U:  stop
 S:  <stoppar>
-J:  starta
+U:  starta
 S:  ok vilken takt vill du ha
-J:  sju tredjedelstakt
+U:  sju tredjedelstakt
 S:  ok sju tredjedelstakt, vilket tempo vill du ha
-J:  femtifem slag per minut
+U:  femtifem slag per minut
 S:  ok <makes metronome sound>
-J:  stop
+U:  stop
 S:  stop
-J:  start
+U:  start
 S:  <makes metronome sound>
-J:  stop
+U:  stop
 S:  stop
 
