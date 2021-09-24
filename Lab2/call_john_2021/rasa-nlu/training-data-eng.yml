@@ -16,63 +16,74 @@ nlu:
     - call [andy](call_john.sort.contact)
     - call [john](call_john.sort.contact)
     - call [mary](call_john.sort.contact)
-    - call [Andy's](call_john.sort.contact) [work](call_john.sort.phone)
-    - call [Andy](call_john.sort.contact) [mobile](call_john.sort.phone)
-    - call [John's](call_john.sort.contact) [work](call_john.sort.phone)
-    - call [John](call_john.sort.contact) [mobile](call_john.sort.phone)
+    - call [Andy's](call_john.sort.contact) [home](call_john.sort.phone)
+    - call [Andy](call_john.sort.contact) [work](call_john.sort.phone)
+    - call [John](call_john.sort.contact) [work](call_john.sort.phone)
     - call [Lisa's](call_john.sort.contact) [work](call_john.sort.phone)
-    - call [Lisa](call_john.sort.contact) [home](call_john.sort.phone)
-    - call [Mary](call_john.sort.contact) [home](call_john.sort.phone)
-    - call [andy](call_john.sort.contact) [home](call_john.sort.phone)
-    - call [john](call_john.sort.contact) [work](call_john.sort.phone)
+    - call [Lisa](call_john.sort.contact) [mobile](call_john.sort.phone)
+    - call [Mary's](call_john.sort.contact) [mobile](call_john.sort.phone)
+    - call [Mary](call_john.sort.contact) [mobile](call_john.sort.phone)
+    - call [andy](call_john.sort.contact) [mobile](call_john.sort.phone)
     - call [lisa](call_john.sort.contact) [work](call_john.sort.phone)
+    - call [mary](call_john.sort.contact) [home](call_john.sort.phone)
 
 - intent: call_john:question::phone_number
   examples: |
+    - phone number
     - i want to know a contact's number
     - what is [Andy's](call_john.sort.contact) number
     - what is [Andy](call_john.sort.contact) number
-    - what is [John's](call_john.sort.contact) number
     - what is [John](call_john.sort.contact) number
+    - what is [Lisa's](call_john.sort.contact) number
     - what is [Lisa](call_john.sort.contact) number
     - what is [Mary's](call_john.sort.contact) number
     - what is [Mary](call_john.sort.contact) number
     - what is [andy](call_john.sort.contact) number
-    - what is [john](call_john.sort.contact) number
+    - what is [lisa](call_john.sort.contact) number
     - what is [mary](call_john.sort.contact) number
+    - what is [Andy's](call_john.sort.contact) phone number
     - what is [Andy](call_john.sort.contact) phone number
     - what is [John's](call_john.sort.contact) phone number
     - what is [John](call_john.sort.contact) phone number
-    - what is [Lisa's](call_john.sort.contact) phone number
     - what is [Lisa](call_john.sort.contact) phone number
     - what is [Mary's](call_john.sort.contact) phone number
     - what is [Mary](call_john.sort.contact) phone number
+    - what is [andy](call_john.sort.contact) phone number
     - what is [john](call_john.sort.contact) phone number
-    - what is [lisa](call_john.sort.contact) phone number
     - what is [mary](call_john.sort.contact) phone number
     - what is [Andy's](call_john.sort.contact) [mobile](call_john.sort.phone)
-    - what is [Andy](call_john.sort.contact) [mobile](call_john.sort.phone)
-    - what is [John's](call_john.sort.contact) [work](call_john.sort.phone)
-    - what is [John](call_john.sort.contact) [work](call_john.sort.phone)
-    - what is [Lisa's](call_john.sort.contact) [home](call_john.sort.phone)
-    - what is [Lisa](call_john.sort.contact) [work](call_john.sort.phone)
-    - what is [Mary](call_john.sort.contact) [mobile](call_john.sort.phone)
+    - what is [Andy](call_john.sort.contact) [home](call_john.sort.phone)
+    - what is [John](call_john.sort.contact) [mobile](call_john.sort.phone)
+    - what is [Lisa's](call_john.sort.contact) [work](call_john.sort.phone)
+    - what is [Lisa](call_john.sort.contact) [mobile](call_john.sort.phone)
+    - what is [Mary's](call_john.sort.contact) [mobile](call_john.sort.phone)
+    - what is [Mary](call_john.sort.contact) [work](call_john.sort.phone)
     - what is [andy](call_john.sort.contact) [home](call_john.sort.phone)
-    - what is [john](call_john.sort.contact) [mobile](call_john.sort.phone)
-    - what is [lisa](call_john.sort.contact) [mobile](call_john.sort.phone)
-    - what is [Andy's](call_john.sort.contact) [home](call_john.sort.phone) number
-    - what is [Andy](call_john.sort.contact) [home](call_john.sort.phone) number
+    - what is [lisa](call_john.sort.contact) [home](call_john.sort.phone)
+    - what is [mary](call_john.sort.contact) [work](call_john.sort.phone)
+    - what is [Andy](call_john.sort.contact) [work](call_john.sort.phone) number
+    - what is [John's](call_john.sort.contact) [work](call_john.sort.phone) number
     - what is [John](call_john.sort.contact) [home](call_john.sort.phone) number
     - what is [Lisa's](call_john.sort.contact) [mobile](call_john.sort.phone) number
     - what is [Lisa](call_john.sort.contact) [home](call_john.sort.phone) number
-    - what is [Mary's](call_john.sort.contact) [home](call_john.sort.phone) number
-    - what is [Mary](call_john.sort.contact) [home](call_john.sort.phone) number
-    - what is [andy](call_john.sort.contact) [home](call_john.sort.phone) number
+    - what is [Mary's](call_john.sort.contact) [work](call_john.sort.phone) number
+    - what is [Mary](call_john.sort.contact) [mobile](call_john.sort.phone) number
+    - what is [john](call_john.sort.contact) [mobile](call_john.sort.phone) number
     - what is [lisa](call_john.sort.contact) [work](call_john.sort.phone) number
-    - what is [mary](call_john.sort.contact) [work](call_john.sort.phone) number
+    - what is [mary](call_john.sort.contact) [mobile](call_john.sort.phone) number
 
 - intent: call_john:answer
   examples: |
+    - [single](call_john.sort.string)
+    - [double word](call_john.sort.string)
+    - [three in one](call_john.sort.string)
+    - [hey make it four](call_john.sort.string)
+    - [the more the merrier five](call_john.sort.string)
+    - [calm down and count to six](call_john.sort.string)
+    - [bring them through to the jolly seven](call_john.sort.string)
+    - [noone counts toes like an eight toed guy](call_john.sort.string)
+    - [it matters to make sense for nine of us](call_john.sort.string)
+    - [would you bring ten or none to a desert island](call_john.sort.string)
     - [mobile](call_john.sort.phone)
     - [mobile phone](call_john.sort.phone)
     - [mobile number](call_john.sort.phone)
@@ -93,8 +104,10 @@ nlu:
     - [Andy](call_john.sort.contact)
     - [Andy's](call_john.sort.contact)
     - [andy](call_john.sort.contact)
+    - yes [single](call_john.sort.string)
     - yes [mobile](call_john.sort.phone)
     - yes [john](call_john.sort.contact)
+    - no [double word](call_john.sort.string)
     - no [mobile phone](call_john.sort.phone)
     - no [Lisa](call_john.sort.contact)
 
