@@ -5,6 +5,7 @@ from os import getenv
 
 from flask import Flask, request
 from jinja2 import Environment
+from urllib.request import Request, urlopen
 import structlog
 
 from logger import configure_stdout_logging
@@ -172,3 +173,31 @@ def action_success_response():
     )
     logger.info("Sending successful action response to TDM", response=response)
     return response
+
+def get_data(city,country, unit="metric"):
+    url = f"http://api.openweathermap.org/data/2.5/weather?q={city},{country}&units={unit}&APPID=0d997c28baf2dcb718f31be893b5bcc3"
+    print(url)
+    request = Request(url)
+    response = urlopen(request)
+    data = response.read()
+    return json.loads(data)
+
+@app.route("/temperature", methods=['POST'])
+def temperature():
+    payload = request.get_json()
+    city = payload["context"]["facts"]["city_to_search"]["grammar_entry"]
+    country = payload["context"]["facts"]["country_to_search"]["grammar_entry"]
+    data = get_data(city, country)
+    temp = data['main']['temp']
+    tempstr = str(temp)
+    return query_response(value=tempstr, grammar_entry=None)
+
+@app.route("/weather", methods=['POST'])
+def temperature():
+    payload = request.get_json()
+    city = payload["context"]["facts"]["city_to_search"]["grammar_entry"]
+    country = payload["context"]["facts"]["country_to_search"]["grammar_entry"]
+    data = get_data(city, country)
+    temp = data['main']['temp']
+    tempstr = str(temp)
+    return query_response(value=tempstr, grammar_entry=None)

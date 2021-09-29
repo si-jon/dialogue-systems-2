@@ -21,4 +21,52 @@
     </one-of>
   </action>
 
+  <question speaker="user" predicate="temperature" type="wh_question">
+    <one-of>
+      <item>temperature</item>
+      <item>i want to know the temperature</item>
+      <item>what is the temperature</item>
+    </one-of>
+  </question>
+
+  <question speaker="user" predicate="weather" type="wh_question">
+    <one-of>
+      <item>weather</item>
+      <item>i want to know the weather</item>
+    </one-of>
+  </question>
+
+
+  <question speaker="system" predicate="selected_city" type="wh_question">
+    what city
+  </question>
+
+  <question speaker="system" predicate="selected_country" type="wh_question">
+    what country
+  </question>
+
+  <question speaker="system" type="alt_question">
+    do you want to know the temperature or the current weather
+  </question>
+
+  <answer speaker="system" predicate="temperature">
+    the temperature is <slot predicate="temperature"/>
+  </answer>
+
+
+  <individual name="city_london">
+    <one-of>
+      <item>london</item>
+      <item>London</item>
+    </one-of>
+  </individual>
+
+  <individual name="country_uk">
+    <one-of>
+      <item>uk</item>
+      <item>UK</item>
+      <item>united kingdom</item>
+    </one-of>
+  </individual>
+
 </grammar>

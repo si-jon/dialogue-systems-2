@@ -1,3 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ontology name="WeatherOntology">
+
+    <sort name="city" dynamic="true"/>
+    <sort name="country" dynamic="true"/>
+
+    <predicate name="selected_city" sort="city"/>
+    <predicate name="selected_country" sort="country"/>
+    <predicate name="temperature" sort="string"/>
+    <predicate name="weather" sort="string"/>
+
+    <individual name="city_london" sort="city"/>
+    <individual name="country_uk" sort="country"/>
+
 </ontology>
