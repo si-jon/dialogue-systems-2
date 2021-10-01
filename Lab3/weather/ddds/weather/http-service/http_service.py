@@ -185,19 +185,24 @@ def get_data(city,country, unit="metric"):
 @app.route("/temperature", methods=['POST'])
 def temperature():
     payload = request.get_json()
-    city = payload["context"]["facts"]["city_to_search"]["grammar_entry"]
-    country = payload["context"]["facts"]["country_to_search"]["grammar_entry"]
-    data = get_data(city, country)
+    facts = payload["context"]["facts"]
+    city = facts["selected_city"]["grammar_entry"]
+    country = facts["selected_country"]["grammar_entry"]
+    if "selected_unit" in facts:
+      unit = facts["selected_unit"]["grammar_entry"]
+    else:
+      unit = "metric"
+    data = get_data(city, country, unit)
     temp = data['main']['temp']
     tempstr = str(temp)
     return query_response(value=tempstr, grammar_entry=None)
 
 @app.route("/weather", methods=['POST'])
-def temperature():
+def weather():
     payload = request.get_json()
-    city = payload["context"]["facts"]["city_to_search"]["grammar_entry"]
-    country = payload["context"]["facts"]["country_to_search"]["grammar_entry"]
+    city = payload["context"]["facts"]["selected_city"]["grammar_entry"]
+    country = payload["context"]["facts"]["selected_country"]["grammar_entry"]
     data = get_data(city, country)
-    temp = data['main']['temp']
-    tempstr = str(temp)
-    return query_response(value=tempstr, grammar_entry=None)
+    print("Data received")
+    weather = data['weather'][0]['description']
+    return query_response(value=weather, grammar_entry=None)

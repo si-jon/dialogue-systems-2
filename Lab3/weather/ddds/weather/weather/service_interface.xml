@@ -3,8 +3,9 @@
 
     <query name="temperature">
         <parameters>
-            <parameter predicate="selected_city" format="value"/>
-            <parameter predicate="selected_country" format="value"/>
+            <parameter predicate="selected_city" format="grammar_entry"/>
+            <parameter predicate="selected_country" format="grammar_entry"/>
+            <parameter predicate="selected_unit" format="grammar_entry" optional="true"/>
         </parameters>
         <target>
             <http endpoint="http://http-service/temperature"/>
@@ -13,8 +14,8 @@
 
     <query name="weather">
         <parameters>
-            <parameter predicate="selected_city" format="value"/>
-            <parameter predicate="selected_country" format="value"/>
+            <parameter predicate="selected_city" format="grammar_entry"/>
+            <parameter predicate="selected_country" format="grammar_entry"/>
         </parameters>
         <target>
             <http endpoint="http://http-service/weather"/>

@@ -26,6 +26,9 @@
       <item>temperature</item>
       <item>i want to know the temperature</item>
       <item>what is the temperature</item>
+      <item>what is the temperature in <slot predicate="selected_city"/></item>
+      <item>what is the temperature in <slot predicate="selected_city"/> <slot predicate="selected_country"/></item>
+      <item>what is the temperature in <slot predicate="selected_city"/> <slot predicate="selected_country"/> in <slot predicate="selected_unit"/></item>
     </one-of>
   </question>
 
@@ -33,6 +36,8 @@
     <one-of>
       <item>weather</item>
       <item>i want to know the weather</item>
+      <item>what is the weather in <slot predicate="selected_city"/></item>
+      <item>what is the weather in <slot predicate="selected_city"/> <slot predicate="selected_country"/></item>
     </one-of>
   </question>
 
@@ -45,6 +50,10 @@
     what country
   </question>
 
+  <question type="wh_question" predicate="selected_unit" speaker="system">
+    what unit
+  </question>
+
   <question speaker="system" type="alt_question">
     do you want to know the temperature or the current weather
   </question>
@@ -53,20 +62,45 @@
     the temperature is <slot predicate="temperature"/>
   </answer>
 
+  <answer speaker="system" predicate="weather">
+    the weather is <slot predicate="weather"/>
+  </answer>
 
   <individual name="city_london">
     <one-of>
-      <item>london</item>
       <item>London</item>
     </one-of>
   </individual>
 
   <individual name="country_uk">
     <one-of>
-      <item>uk</item>
+      <item>The UK</item>
+      <item>Britain</item>
+      <item>United Kingdom</item>
       <item>UK</item>
-      <item>united kingdom</item>
     </one-of>
   </individual>
+
+  
+  <individual name="metric">
+    <one-of>
+      <item>celsius</item>
+      <item>metric</item>
+    </one-of>
+  </individual>
+
+  <individual name="imperial">
+    <one-of>
+      <item>fahrenheit</item>
+      <item>imperial</item>
+    </one-of>
+  </individual>
+
+  <individual name="kelvin">
+    <one-of>
+      <item>kelvin</item>
+    </one-of>
+  </individual>
+
 
 </grammar>

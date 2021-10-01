@@ -4,6 +4,14 @@
   <goal type="perform" action="top">
     <plan>
       <forget_all/>
+      <findout type="goal"/>
+    </plan>
+  </goal>
+
+<!--
+  <goal type="perform" action="top">
+    <plan>
+      <forget_all/>
       <findout type="alt_question">
         <alt>
           <resolve type="wh_question" predicate="temperature"/>
@@ -14,11 +22,12 @@
       </findout>
     </plan>
   </goal>
-
+-->
   <goal type="resolve" question_type="wh_question" predicate="temperature">
     <plan>
       <findout type="wh_question" predicate="selected_city"/>
       <findout type="wh_question" predicate="selected_country"/>
+      <bind type="wh_question" predicate="selected_unit"/>
       <invoke_service_query predicate="temperature" type="wh_question"/>
     </plan>
   </goal>
