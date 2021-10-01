@@ -1,8 +1,8 @@
 --- main menu
-S> Do you want to know about the temperature or the current weather
+S> Do you want to know the temperature or know the current weather?
 
 --- temperature (incremental)
-S> What would you like to do?
+S> Do you want to know the temperature or know the current weather?
 U> what is the temperature
 S> What city?
 U> London
@@ -11,24 +11,24 @@ U> UK
 S> The temperature is *
 
 --- temperature (one-shot)
-S> What would you like to do?
+S> Do you want to know the temperature or know the current weather?
 U> what is the temperature in London UK
 S> The temperature is *
 
 --- temperature (over answering)
-S> What would you like to do?
+S> Do you want to know the temperature or know the current weather?
 U> what is the temperature in London
 S> What country?
 U> UK
 S> The temperature is *
 
 --- temperature (with unit)
-S> What would you like to do?
+S> Do you want to know the temperature or know the current weather?
 U> what is the temperature in London UK in celsius
 S> The temperature is *
 
 --- weather (incremental)
-S> What would you like to do?
+S> Do you want to know the temperature or know the current weather?
 U> I want to know the weather
 S> What city?
 U> London
@@ -37,12 +37,12 @@ U> UK
 S> The weather is *
 
 --- weather (one-shot)
-S> What would you like to do?
+S> Do you want to know the temperature or know the current weather?
 U> what is the weather in London UK
 S> The weather is *
 
 --- weather (over answering)
-S> What would you like to do?
+S> Do you want to know the temperature or know the current weather?
 U> what is the weather in London
 S> What country?
 U> UK

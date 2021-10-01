@@ -42,6 +42,14 @@
   </question>
 
 
+  <question speaker="all" predicate="temperature"  type="wh_question">
+    the temperature
+  </question>
+
+  <question speaker="all" predicate="weather"  type="wh_question">
+    the current weather
+  </question>
+
   <question speaker="system" predicate="selected_city" type="wh_question">
     what city
   </question>
