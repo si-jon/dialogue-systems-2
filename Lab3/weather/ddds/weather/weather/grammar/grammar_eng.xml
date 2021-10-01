@@ -28,6 +28,8 @@
       <item>what is the temperature</item>
       <item>what is the temperature in <slot predicate="selected_city"/></item>
       <item>what is the temperature in <slot predicate="selected_city"/> <slot predicate="selected_country"/></item>
+      <item>what is the temperature in <slot predicate="selected_unit"/></item>
+      <item>what is the temperature in <slot predicate="selected_city"/> in <slot predicate="selected_unit"/></item>
       <item>what is the temperature in <slot predicate="selected_city"/> <slot predicate="selected_country"/> in <slot predicate="selected_unit"/></item>
     </one-of>
   </question>

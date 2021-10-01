@@ -22,10 +22,27 @@ S> What country?
 U> UK
 S> The temperature is *
 
---- temperature (with unit)
+--- temperature with unit (incremental)
+S> Do you want to know the temperature or know the current weather?
+U> what is the temperature in celsius
+S> What city?
+U> London
+S> What country?
+U> UK
+S> The temperature is *
+
+--- temperature with unit (one-shot)
 S> Do you want to know the temperature or know the current weather?
 U> what is the temperature in London UK in celsius
 S> The temperature is *
+
+--- temperature with unit (over answering)
+S> Do you want to know the temperature or know the current weather?
+U> what is the temperature in London in celsius
+S> What country?
+U> UK
+S> The temperature is *
+
 
 --- weather (incremental)
 S> Do you want to know the temperature or know the current weather?
