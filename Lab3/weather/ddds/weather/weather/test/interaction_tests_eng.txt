@@ -64,3 +64,37 @@ U> what is the weather in London
 S> What country?
 U> UK
 S> The weather is *
+
+--- temperature (incremental)
+S> Do you want to know the temperature or know the current weather?
+U> temperature please
+S> What city?
+U> London
+S> What country?
+U> UK
+S> The temperature is *
+
+--- temperature (please)
+S> Do you want to know the temperature or know the current weather?
+U> temperature please
+S> What city?
+U> Stockholm
+S> What country?
+U> Sweden
+S> The temperature is *
+
+--- weather (misspelled)
+S> Do you want to know the temperature or know the current weather?
+U> the wether
+S> What city?
+U> Paris
+S> What country?
+U> France
+S> The weather is *
+
+--- weather (misspelled 2)
+S> Do you want to know the temperature or know the current weather?
+U> what is the weather in Budapest
+S> What country?
+U> Hungry
+S> The weather is *

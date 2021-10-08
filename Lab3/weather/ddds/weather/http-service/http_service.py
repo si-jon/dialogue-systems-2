@@ -203,6 +203,5 @@ def weather():
     city = payload["context"]["facts"]["selected_city"]["grammar_entry"]
     country = payload["context"]["facts"]["selected_country"]["grammar_entry"]
     data = get_data(city, country)
-    print("Data received")
     weather = data['weather'][0]['description']
     return query_response(value=weather, grammar_entry=None)

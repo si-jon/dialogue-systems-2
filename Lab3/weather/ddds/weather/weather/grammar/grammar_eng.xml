@@ -25,12 +25,23 @@
     <one-of>
       <item>temperature</item>
       <item>i want to know the temperature</item>
+      <item>i want to know the temperature in <slot predicate="selected_city"/></item>
+      <item>i want to know the temperature in <slot predicate="selected_city"/> <slot predicate="selected_country"/></item>
+      <item>i want to know the temperature in <slot predicate="selected_unit"/></item>
+      <item>i want to know the temperature in <slot predicate="selected_city"/> in <slot predicate="selected_unit"/></item>
+      <item>i want to know the temperature in <slot predicate="selected_city"/> <slot predicate="selected_country"/> in <slot predicate="selected_unit"/></item>
       <item>what is the temperature</item>
       <item>what is the temperature in <slot predicate="selected_city"/></item>
       <item>what is the temperature in <slot predicate="selected_city"/> <slot predicate="selected_country"/></item>
       <item>what is the temperature in <slot predicate="selected_unit"/></item>
       <item>what is the temperature in <slot predicate="selected_city"/> in <slot predicate="selected_unit"/></item>
       <item>what is the temperature in <slot predicate="selected_city"/> <slot predicate="selected_country"/> in <slot predicate="selected_unit"/></item>
+      <item>tell me the temperature</item>
+      <item>tell me the temperature in <slot predicate="selected_city"/></item>
+      <item>tell me the temperature in <slot predicate="selected_city"/> <slot predicate="selected_country"/></item>
+      <item>tell me the temperature in <slot predicate="selected_unit"/></item>
+      <item>tell me the temperature in <slot predicate="selected_city"/> in <slot predicate="selected_unit"/></item>
+      <item>tell me the temperature in <slot predicate="selected_city"/> <slot predicate="selected_country"/> in <slot predicate="selected_unit"/></item>
     </one-of>
   </question>
 
@@ -38,8 +49,14 @@
     <one-of>
       <item>weather</item>
       <item>i want to know the weather</item>
+      <item>i want to know the weather in <slot predicate="selected_city"/></item>
+      <item>i want to know the weather in <slot predicate="selected_city"/> <slot predicate="selected_country"/></item>
+      <item>what is the weather</item>
       <item>what is the weather in <slot predicate="selected_city"/></item>
       <item>what is the weather in <slot predicate="selected_city"/> <slot predicate="selected_country"/></item>
+      <item>tell me the weather</item>
+      <item>tell me the weather in <slot predicate="selected_city"/></item>
+      <item>tell me the weather in <slot predicate="selected_city"/> <slot predicate="selected_country"/></item>
     </one-of>
   </question>
 
@@ -82,6 +99,36 @@
     </one-of>
   </individual>
 
+  <individual name="city_stockholm">
+    <one-of>
+      <item>Stockholm</item>
+    </one-of>
+  </individual>
+
+  <individual name="city_paris">
+    <one-of>
+      <item>Paris</item>
+    </one-of>
+  </individual>
+
+  <individual name="city_tokyo">
+    <one-of>
+      <item>Tokyo</item>
+    </one-of>
+  </individual>
+
+  <individual name="city_budapest">
+    <one-of>
+      <item>Budapest</item>
+    </one-of>
+  </individual>
+
+  <individual name="city_barcelona">
+    <one-of>
+      <item>Barcelona</item>
+    </one-of>
+  </individual>
+
   <individual name="country_uk">
     <one-of>
       <item>The UK</item>
@@ -91,6 +138,35 @@
     </one-of>
   </individual>
 
+  <individual name="country_sweden">
+    <one-of>
+      <item>Sweden</item>
+    </one-of>
+  </individual>
+
+  <individual name="country_france">
+    <one-of>
+      <item>France</item>
+    </one-of>
+  </individual>
+
+  <individual name="country_japan">
+    <one-of>
+      <item>Japan</item>
+    </one-of>
+  </individual>
+
+  <individual name="country_hungary">
+    <one-of>
+      <item>Hungary</item>
+    </one-of>
+  </individual>
+
+  <individual name="country_spain">
+    <one-of>
+      <item>Spain</item>
+    </one-of>
+  </individual>
   
   <individual name="metric">
     <one-of>

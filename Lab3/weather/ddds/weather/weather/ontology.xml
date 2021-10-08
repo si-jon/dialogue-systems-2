@@ -12,7 +12,17 @@
     <predicate name="weather" sort="string"/>
 
     <individual name="city_london" sort="city"/>
+    <individual name="city_stockholm" sort="city"/>
+    <individual name="city_paris" sort="city"/>
+    <individual name="city_tokyo" sort="city"/>
+    <individual name="city_budapest" sort="city"/>
+    <individual name="city_barcelona" sort="city"/>
     <individual name="country_uk" sort="country"/>
+    <individual name="country_sweden" sort="country"/>
+    <individual name="country_france" sort="country"/>
+    <individual name="country_japan" sort="country"/>
+    <individual name="country_hungary" sort="country"/>
+    <individual name="country_spain" sort="country"/>
 
     <individual name="metric" sort="unit"/>
     <individual name="imperial" sort="unit"/>
