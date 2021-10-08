@@ -175,6 +175,7 @@ def action_success_response():
     return response
 
 def get_data(city,country, unit="metric"):
+    country = country.replace(" ", "")
     url = f"http://api.openweathermap.org/data/2.5/weather?q={city},{country}&units={unit}&APPID=0d997c28baf2dcb718f31be893b5bcc3"
     print(url)
     request = Request(url)
