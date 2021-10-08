@@ -1,0 +1,8 @@
+Thoughts about the lab: 
+Except for some technical issues with connecting to the rasa server, I didn't 
+run into any big problems. The trickiest part was navigating the tdm documentation, 
+though I guess it is to be expected since it's a work in progress.
+The tutorial session may have been a bit fast. Of course, it can be hard to tell 
+as an instructor, unless students ask questions and make it apparent that they need 
+more explanation about things. Other than that, I think the lab was a good 
+introduction to tdm, which seems fun to work with!
