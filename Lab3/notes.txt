@@ -1,1 +1,26 @@
-Strange error: Trained rasa with lookup files, now the tdm doesn't ask for country after giving the city London?!?!?!
+This lab revealed some some of tdm:s quirkiness. One of them was the alt-questions (which also could use a bit more documentation on how they work). From my understanding, tdm has standard phrases for the top goal, like "What do you want to do", and also when you use alt-questions. With alt-question, the phrase begins with "Do you want to", and then continuos with "know x", where x is a predicate. To me, this results in quite awkward sentences like "do you want to know x or know y", where a regular speaker wouldn't repeat "know".
+
+I also stumbled upon a problem after training the rasa model with countries.csv and world-cities.csv. The model works very well with most cities and countries, but for a few cities, like London, Sydney, and Moscow, I get a problem. Whenever any of these cities are used in for example an incremental test, the tdm won't ask for the speaker to say a country, but report the weather or temperature directly. E.g.
+
+S> Do you want to know the temperature or know the current weather?
+U> temperature
+S> What city?
+U> London
+S> The temperature is 17.12.
+U>
+S> Returning to main menu. Do you want to know the temperature or know the current weather?
+U> weather
+S> What city?
+U> Moscow
+S> The weather is clear sky.
+U>
+S> Returning to main menu. Do you want to know the temperature or know the current weather?
+U> temperature
+S> What city?
+U> Paris
+S> What country?
+U> France
+S> The temperature is 18.82.
+
+This is most curious, and doesn't happen when I don't use the rasa model.
+Other than that, the lab was tricky but fun!
