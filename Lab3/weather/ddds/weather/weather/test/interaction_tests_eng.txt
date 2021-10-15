@@ -5,9 +5,9 @@ S> Do you want to know the temperature or know the current weather?
 S> Do you want to know the temperature or know the current weather?
 U> what is the temperature
 S> What city?
-U> Stockholm
+U> Paris
 S> What country?
-U> Sweden
+U> France
 S> The temperature is *
 
 --- temperature (one-shot)
@@ -17,18 +17,18 @@ S> The temperature is *
 
 --- temperature (over answering)
 S> Do you want to know the temperature or know the current weather?
-U> what is the temperature in Oslo
+U> what is the temperature in Stockholm
 S> What country?
-U> Norway
+U> Sweden
 S> The temperature is *
 
 --- temperature with unit (incremental)
 S> Do you want to know the temperature or know the current weather?
 U> what is the temperature in celsius
 S> What city?
-U> Copenhagen
+U> Paris
 S> What country?
-U> Denmark
+U> France
 S> The temperature is *
 
 --- temperature with unit (one-shot)
@@ -38,18 +38,18 @@ S> The temperature is *
 
 --- temperature with unit (over answering)
 S> Do you want to know the temperature or know the current weather?
-U> what is the temperature in Liverpool in celsius
+U> what is the temperature in Stockholm in celsius
 S> What country?
-U> Britain
+U> Sweden
 S> The temperature is *
 
 --- weather (incremental)
 S> Do you want to know the temperature or know the current weather?
 U> I want to know the weather
 S> What city?
-U> Melbourne
+U> Paris
 S> What country?
-U> Australia
+U> France
 S> The weather is *
 
 --- weather (one-shot)
@@ -68,9 +68,9 @@ S> The weather is *
 S> Do you want to know the temperature or know the current weather?
 U> temperature please
 S> What city?
-U> Stockholm
+U> Paris
 S> What country?
-U> Sweden
+U> France
 S> The temperature is *
 
 --- weather (misspelled)
